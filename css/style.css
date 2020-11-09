@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-sizing-adjust: 100%;
+  -moz-text-sizing-adjust: 100%;
+  -webkit-text-sizing-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "LB-Bold";
+  src: url("../fonts/LibreBaskerville-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "LB-Reg";
+  src: url("../fonts/LibreBaskerville-Regular.ttf") format("truetype");
+}
+.header {
+  background-color: #ffffff;
+}
+
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.header__line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+}
+
+.header__link {
+  font-family: "Poppins";
+  font-size: 12px;
+  color: #272727;
+}
+
+.fullscreen {
+  background-color: #3f4049;
+  height: 685px;
+}
+
+.wrapper-fullscreen {
+  width: 45%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fullscreen__title {
+  font-family: "LB-Reg";
+  font-weight: 200;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 150px;
+}
+
+.fullscreen__button {
+  padding: 20px 40px;
+  background-color: #fc5f45;
+  border-radius: 30px;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 50px;
+}
+
+.fullscreen__dignities {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.dignity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+}
+
+.dignity__text {
+  font-family: "Poppins";
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 35px;
+}
+
+.green-text {
+  color: #38c695;
+}
+
+.purple-text {
+  color: #b27cf5;
+}
+
+.orange-text {
+  color: #feb960;
+}
