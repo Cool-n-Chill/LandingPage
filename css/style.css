@@ -71,6 +71,10 @@ img {
   src: url("../fonts/Poppins-Medium.ttf") format("truetype");
 }
 @font-face {
+  font-family: "Poppins-Reg";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
   font-family: "LB-Bold";
   src: url("../fonts/LibreBaskerville-Bold.ttf") format("truetype");
 }
@@ -78,6 +82,7 @@ img {
   font-family: "LB-Reg";
   src: url("../fonts/LibreBaskerville-Regular.ttf") format("truetype");
 }
+/*---Header---*/
 .header {
   background-color: #ffffff;
 }
@@ -171,4 +176,67 @@ img {
 
 .orange-text {
   color: #feb960;
+}
+
+/*---About us---*/
+.about-us {
+  background-color: #ffffff;
+  padding: 150px 0;
+}
+
+.about-us__blocks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about-us__photo-block {
+  width: 55%;
+  position: relative;
+}
+
+.about-us__photo {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-us__text-block {
+  width: 40%;
+  background-color: #ffffff;
+  padding: 100px 80px;
+  position: absolute;
+  right: 20%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-image: url("../img/about-us/01.png");
+  background-repeat: no-repeat;
+  border-image: url("../img/about-us/Lines.png") 1 round;
+  border-width: 5px;
+  border-collapse: initial;
+  border-style: solid;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.about-us__text-block :last-child {
+  margin-bottom: 0;
+}
+
+.about-us__title {
+  font-family: "LB-Bold";
+  font-size: 50px;
+  margin-bottom: 8%;
+}
+
+.about-us__text {
+  font-family: "Poppins-Reg";
+  font-weight: 100;
+  font-size: 14px;
+  margin-bottom: 5%;
+  line-height: 1.5;
+}
+
+.about-us__line {
+  background-image: url(../img/about-us/Lines.png);
+  height: 5px;
+  width: 100%;
 }
