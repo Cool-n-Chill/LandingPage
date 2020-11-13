@@ -82,14 +82,20 @@ img {
   font-family: "LB-Reg";
   src: url("../fonts/LibreBaskerville-Regular.ttf") format("truetype");
 }
-/*---Header---*/
-.header {
-  background-color: #ffffff;
+/*---Commons---*/
+.title {
+  font-family: "LB-Bold";
+  font-size: 50px;
 }
 
 .wrapper {
   width: 60%;
   margin: 0 auto;
+}
+
+/*---Header---*/
+.header {
+  background-color: #ffffff;
 }
 
 .header__line {
@@ -210,7 +216,7 @@ img {
   background-image: url("../img/about-us/01.png");
   background-repeat: no-repeat;
   border-image: url("../img/about-us/Lines.png") 1 round;
-  border-width: 5px;
+  border-width: 3px;
   border-collapse: initial;
   border-style: solid;
   border-top: none;
@@ -222,8 +228,6 @@ img {
 }
 
 .about-us__title {
-  font-family: "LB-Bold";
-  font-size: 50px;
   margin-bottom: 8%;
 }
 
@@ -239,4 +243,91 @@ img {
   background-image: url(../img/about-us/Lines.png);
   height: 5px;
   width: 100%;
+}
+
+/*---Our focus---*/
+.our-focus {
+  background-color: #f7f7f7;
+  padding: 150px 0;
+}
+
+.our-focus__blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-focus__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 85px;
+  position: relative;
+}
+.our-focus__about :first-child::before {
+  content: "";
+  display: block;
+  width: 315px;
+  height: 200px;
+  position: absolute;
+  bottom: 53%;
+  right: 23%;
+  background-image: url("../img/our-focus/02.png");
+  z-index: -1;
+}
+
+.our-focus__title {
+  margin-bottom: 40px;
+  z-index: 0;
+}
+
+.our-focus__text {
+  font-family: "Poppins-Reg";
+  font-size: 18px;
+}
+
+.our-focus__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.focus-card {
+  background-color: #ffffff;
+  padding: 6% 3%;
+  text-align: center;
+  width: 23%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.focus-card__picture {
+  margin-bottom: 20px;
+}
+
+.focus-card__title {
+  font-family: "Poppins";
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.focus-card-text {
+  color: #616161;
+  font-family: "Poppins-Reg";
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.red-border {
+  border-bottom: 3px solid #fc5f45;
+}
+
+.green-border {
+  border-bottom: 3px solid #38c695;
+}
+
+.purple-border {
+  border-bottom: 3px solid #b27cf5;
+}
+
+.orange-border {
+  border-bottom: 3px solid #feb960;
 }
