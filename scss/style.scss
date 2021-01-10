@@ -25,6 +25,17 @@
 .title{
     font-family: 'LB-Bold';
     font-size: 50px;
+    color: #313131;
+}
+.block__description{
+    font-family: 'Poppins-Reg';
+    font-size: 14px;
+    color: #616161;
+}
+.block__about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .wrapper{
     width: 60%;
@@ -185,9 +196,6 @@
     align-items: center;
 }
 .our-focus__about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 85px;
     position: relative;
     :first-child::before{
@@ -197,7 +205,7 @@
         height: 200px;
         position: absolute;
         bottom: 53%;
-        right: 23%;
+        right: 15%;
         background-image: url('../img/our-focus/02.png');
         z-index: -1;
     }
@@ -205,10 +213,6 @@
 .our-focus__title {
     margin-bottom: 40px;
     z-index: 0;
-}
-.our-focus__text {
-    font-family: 'Poppins-Reg';
-    font-size: 18px;
 }
 .our-focus__cards {
     display: flex;
@@ -247,4 +251,123 @@
 }
 .orange-border{
     border-bottom: 3px solid #feb960;
+}
+
+/*---Video block---*/
+
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #3f4049;
+
+    padding: 150px 0;
+
+    text-align: center;
+    color: #ffffff;
+    font-weight: 200;
+}
+.video__title {
+    font-family: 'Poppins-Reg';
+    font-size: 30px;
+}
+.video__button {
+    margin: 35px 0;
+}
+.video__button-descsription {
+    font-family: 'Poppins-Reg';
+    font-size: 14px;
+}
+
+/*---Portfolio block---*/
+
+.portfolio {
+    background-color: #ffffff;
+    padding: 150px 0;
+}
+.portfolio__blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.portfolio__about {
+    position: relative;
+    margin-bottom: 80px;
+    :first-child::before{
+        content: '';
+        display: block;
+        width: 317px;
+        height: 206px;
+        position: absolute;
+        bottom: 47%;
+        right: 33%;
+        background-image: url('../img/portfolio/03.png');
+        z-index: -1;
+    }
+}
+.portfolio__title {
+    margin-bottom: 40px;
+    z-index: 0;
+}
+.portfolio__text {
+}
+.portfolio__works {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.portfolio__item{
+    display: block;
+    flex: 30%;
+    overflow: hidden;
+    margin: 0.5%;
+    position: relative;
+}
+.portfolio__item-description{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Poppins-Reg';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-image: url('../img/about-us/Lines.png') 1 round;
+    border-width: 3px;
+    border-collapse: initial;
+    border-style: solid;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    z-index: 2;
+}
+.portfolio__item-description_visible{
+    visibility: visible;
+}
+.item__photo{
+    max-width: 100%;
+    height: auto;
+}
+.portfolio__item_hovered{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+.portfolio__item_plus-hovered{
+    position: absolute;
+    top: 40%;
+	left: 50%;
+	transform: translate(-60%, -50%);
+    max-width: 100%;
+    height: auto;
 }
