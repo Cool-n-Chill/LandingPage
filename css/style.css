@@ -461,3 +461,263 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/*---Our team block---*/
+.our-team {
+  padding: 150px 0;
+  background-color: #f7f7f7;
+}
+
+.our-team__blocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.our-team__about {
+  margin-bottom: 85px;
+  position: relative;
+}
+.our-team__about :first-child::before {
+  content: "";
+  display: block;
+  width: 342px;
+  height: 200px;
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/our-team/04.png");
+  z-index: -1;
+}
+
+.our-team__title {
+  margin-bottom: 40px;
+  z-index: 0;
+}
+
+.our-team__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-card {
+  background-color: #ffffff;
+  text-align: center;
+  width: 23%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-card__picture {
+  width: 100%;
+  border: 5px solid #ffffff;
+  border-bottom: none;
+}
+
+.red-gradient {
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.red-gradient::after {
+  background: transparent;
+  background: linear-gradient(to top, rgba(252, 95, 69, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.green-gradient {
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.green-gradient::after {
+  background: transparent;
+  background: linear-gradient(to top, rgba(56, 198, 149, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.purple-gradient {
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.purple-gradient::after {
+  background: transparent;
+  background: linear-gradient(to top, rgba(178, 124, 245, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.orange-gradient {
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.orange-gradient::after {
+  background: transparent;
+  background: linear-gradient(to top, rgba(254, 185, 96, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.team-card__icon {
+  max-width: 100%;
+  height: auto;
+}
+
+.team-card__title_red {
+  font-family: "Poppins";
+  color: #fc5f45;
+  margin: 22px 0 14px;
+  font-size: 14px;
+}
+
+.team-card__title_green {
+  font-family: "Poppins";
+  color: #38c695;
+  margin: 22px 0 14px;
+  font-size: 14px;
+}
+
+.team-card__title_purple {
+  font-family: "Poppins";
+  color: #b27cf5;
+  margin: 22px 0 14px;
+  font-size: 14px;
+}
+
+.team-card__title_orange {
+  font-family: "Poppins";
+  color: #feb960;
+  margin: 22px 0 14px;
+  font-size: 14px;
+}
+
+.team-card-text {
+  font-family: "Poppins-Reg";
+  color: #959595;
+  margin-bottom: 22px;
+  font-size: 10px;
+}
+
+.members-description {
+  margin-top: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.members-description__decription-card_red {
+  padding: 50px 75px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+.members-description__decription-card_red ::before {
+  content: "";
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 2;
+}
+.members-description__decription-card_red ::after {
+  content: "";
+  display: block;
+  background-color: #ffffff;
+  position: absolute;
+  top: -47px;
+  left: 9%;
+  transform: translateX(-85%);
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg) translateX(15px) translateY(15px);
+  box-shadow: 0 0 5px rgba(207, 207, 207, 0.1);
+  z-index: 1;
+}
+
+.description-card__title {
+  font-family: "Poppins";
+  font-size: 20px;
+  color: #272727;
+  margin-bottom: 25px;
+}
+
+.description-card__main-part {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-card__description {
+  font-family: "Poppins-Reg";
+  font-size: 14px;
+  color: #616161;
+  line-height: 175%;
+  width: 70%;
+}
+
+.description-card__social {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  align-items: center;
+}
+
+.social__share {
+  margin-right: 10px;
+}
+
+.social__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-left: 40px;
+  border-left: 3px solid #efefef;
+  font-family: "Poppins-Reg";
+  color: #616161;
+  line-height: 175%;
+}
+
+.social__facebook {
+  list-style-image: url("../img/our-team/face.png");
+}
+
+.social__twitter {
+  list-style-image: url("../img/our-team/twit.png");
+}
+
+.social__linkedin {
+  list-style-image: url("../img/our-team/link.png");
+}
+
+.social__instagram {
+  list-style-image: url("../img/our-team/inst.png");
+}
